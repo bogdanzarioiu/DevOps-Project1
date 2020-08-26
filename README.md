@@ -28,7 +28,7 @@ You can check the status of the processes at any time by running<br/>
 >`sudo systemctl status docker` or<br/> 
 >`sudo systemctl status jenkins`
 
-# Building and running the pipeline
+# Building the pipeline
 In order for Jenkins to build successfully the created task, there are 2 plugins required:<br/>
 >`Docker`<br/>
 >`Docker Pipeline`<br/>
