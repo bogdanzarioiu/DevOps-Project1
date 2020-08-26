@@ -1,6 +1,6 @@
 # DevOps-Project1
 This is a very simple CI/CD project. It uses a Jenkinsfile took from the official Jenkins website in order to create a simple pipeline.<br/>
-In my example I used the Python option that will create a docker container running Python 3.5.1 and when Jenkins will build successfully, it will print the python version<br/>
+In my example I used the Python option that will create a docker container running Python 3.5.1 and when Jenkins will build successfully, it will print the python version.<br/>
 >https://www.jenkins.io/doc/pipeline/tour/hello-world/
 # Setup
 I initially created an EC2 instance on AWS running CentOS.
@@ -12,8 +12,8 @@ After this I downloaded Jenkins for CentOS(version 2.235.5) - This will be the m
 In order for Jenkins to work, it needs java also. My EC2 instance didn't have it installed so I had to install it:<br/>
 >`sudo yum install java`<br/>
 Because my example uses Docker, I had to install that also:<br/>
->`sudo yum install docker`
-Since Jenkins will use Git as SCM(Source Control Management), I had to install git on our instance also:<br/>
+>`sudo yum install docker`<br/>
+Since Jenkins will use Git as SCM(Source Control Management), I had to install git on our instance:<br/>
 >`sudo yum install git`
 
 
@@ -30,8 +30,8 @@ You can check the status of the processes at any time by running<br/>
 
 # Building and running the pipeline
 In order for Jenkins to build successfully the created task, there are 2 plugins required:<br/>
->>`Docker`<br/>
->>`Docker Pipeline`<br/>
+>`Docker`<br/>
+>`Docker Pipeline`<br/>
 Both can be very easy installed from Jenkins -> Manage Jenkins -> Manage Plugins (there is an option to install both without needing to restart Jenkins).<br/>
 
 
