@@ -46,4 +46,8 @@ Now, I'm aware that this solution is not recommended, but for my testing environ
 Finally, I'd like to say that it was a small little project but very fun to build actually since allowed me to dig deeper in a few topics like Linux, Jenkins, AWS and understand how they all work together. <br/>
 My plan is now to continue learning and build CI/CD pipelines for more difficult projects.
 I can see now how I can setup deployment webservers on AWS with auto scaling templates and even load balancing. Also, configuration management tools like Ansible can be very useful.<br/>
-Jenkins master and slave nodes can run on Docker containers and tools like Kubernetes can be used to manage them.
+Jenkins master and slave nodes can run on Docker containers and tools like Kubernetes can be used to manage them.<br/>
+
+# And finally we can see the successful build!
+
+![image](https://user-images.githubusercontent.com/24807183/91357211-2dd09380-e7f1-11ea-9b68-7343ad06ff7a.png)
