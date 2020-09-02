@@ -35,15 +35,9 @@ In order for Jenkins to build successfully the created task, there are 2 plugins
 Both can be very easy installed from Jenkins -> Manage Jenkins -> Manage Plugins (there is an option to install both without needing to restart Jenkins).<br/>
 
 
-During all this process I encountered a few errors and my builds were failing. Fortunately, the Console Log Output is very useful as it tells you where the error is.<br/>
-The last error preventing me to build the project was<br/>
-`Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock...`<br/>
-After a bit of troubleshooting, I understood that the jenkins service running under the jenkins user couldn't access the docker engine due to permission issues.<br/>
-I tried to add the jenkins user to the docker group but still didn't work. 
-Finally, I changed the permissions for `docker.sock` file<br/>
-`sudo chmod 777 docker.sock`<br/>
-Now, I'm aware that this solution is not recommended, but for my testing environment should be ok.<br/><br/>
-I'd like to say that it was a small little project but very fun to build actually since allowed me to dig deeper in a few topics like Linux, Jenkins, AWS and understand how they all work together. <br/>
+During all this process I encountered a few errors and my builds were failing. Fortunately, the Console Log Output is very useful as it tells you where the error is.
+<br/><br/>
+It was a small little project but very fun to build actually since allowed me to dig deeper in a few topics like Linux, Jenkins, AWS and understand how they all work together. <br/>
 My plan is now to continue learning and build CI/CD pipelines for more difficult projects.
 I can see now how I can setup deployment webservers on AWS with auto scaling templates and even load balancing. Also, configuration management tools like Ansible can be very useful.<br/>
 Jenkins master and slave nodes can run on Docker containers and tools like Kubernetes can be used to manage them.<br/>
