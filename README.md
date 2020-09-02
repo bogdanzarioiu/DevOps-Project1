@@ -1,4 +1,4 @@
-# DevOps-Project1
+# DevOps-Project1 - Creating a simple pipeline job 
 This is a very simple CI/CD project. It uses a Jenkinsfile took from the official Jenkins website in order to create a simple pipeline.<br/>
 In my example I used the Python option that will create a docker container running Python 3.5.1 and when Jenkins will build successfully, it will print the python version.<br/>
 >https://www.jenkins.io/doc/pipeline/tour/hello-world/
